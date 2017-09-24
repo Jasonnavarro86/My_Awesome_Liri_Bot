@@ -1,34 +1,33 @@
 console.log("Node Testing Done Here");
 
+var spotify = require('./spotify')
+
+var keys = require('./keys2');
+
+
+
 var Twitter = require('twitter');
 
-var config = require('./keys2');
-
-var T = new Twitter(config);
+var T = new Twitter(keys);
 
 var params = {
     q: 'JSON_NAVARRO',
     result_type: "recent",
     count: 20
 };
-var tweetDate = [];
 
+// if(process.argv[2] == "my-tweets"){
+// T.get('statuses/user_timeline', params, function (error, tweets, response) {
+//     if (!error) {
 
+//         for (var x in tweets) {
+            
+//             console.log('Tweeted: "', tweets[x].text, '" on ' + tweets[x].created_at);    
+//         }    
+//     }
+//     if (error) {
+//         console.log(error);
+//     }
+// });
 
-
-T.get('statuses/user_timeline', params, function (error, tweets, response) {
-    if (!error) {
-
-        for (var x in tweets) {
-            tweetDate.push(tweets[x].created_at);
-            console.log('Tweeted: "', tweets[x].text, '" on ' + tweetDate[x]);
-         
-        }
-
-    
-    }
-
-    if (error) {
-        console.log(error);
-    }
-});
+// };
