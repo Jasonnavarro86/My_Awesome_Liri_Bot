@@ -6,32 +6,29 @@ var config = require('./keys2');
 
 var T = new Twitter(config);
 
+var params = {
+    q: 'JSON_NAVARRO',
+    result_type: "recent",
+    count: 20
+};
+var tweetDate = [];
 
 
-  var params = {q: 'JSON_NAVARRO',result_type: "recent", count: 20, text: "text"};
-
-//   T.get('search/tweets', params, function(error, tweets, response) {
-//     if (!error) {
-//       console.log("search", tweets);
-     
-//     }
-//     if(error){
-//         console.log(error);
-//     }
-//   });
 
 
-  T.get('statuses/user_timeline', params, function(error, tweets, response) {
+T.get('statuses/user_timeline', params, function (error, tweets, response) {
     if (!error) {
 
+        for (var x in tweets) {
+            tweetDate.push(tweets[x].created_at);
+            console.log('Tweeted: "', tweets[x].text, '" on ' + tweetDate[x]);
+         
+        }
 
-      console.log("statuses",tweets[0].text);
-   
+    
     }
 
-    if(error){
+    if (error) {
         console.log(error);
     }
-  });
-
-
+});
