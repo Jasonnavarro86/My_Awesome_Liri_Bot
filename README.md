@@ -39,7 +39,7 @@ The GIF below demonstrates what happens if you run:
 
 ![do-what-it-says](https://user-images.githubusercontent.com/28733244/30825899-ae544340-a202-11e7-8644-0f3a9caffd8c.gif)
 
-The GIF below demonstrates how each Liri command sent is writing to a file named log.tx: 
+The GIF below demonstrates how each Liri command sent is writing to a file named - log.tx: 
 
 ![logtxt-gif](https://user-images.githubusercontent.com/28733244/30826064-194f7d04-a203-11e7-9e8e-e46157bc8b7f.gif)
 
