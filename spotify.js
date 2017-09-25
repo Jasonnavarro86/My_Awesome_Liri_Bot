@@ -1,6 +1,7 @@
 // These variables require the modules and files needed for the spotify calls. 
 var spotifyApi = require('node-spotify-api');
 var spotifyKeys = require('./spotKeys');
+var fs = require('fs');
 
 // I entered all my code for the spoitfy call in this function.
 function spotifyBot() {
@@ -51,16 +52,39 @@ if (process.argv[2] == "spotify-this-song"){
 
     // This gets the song name
     console.log("We found this info for -", getJSON.name);
+
+    var songName = "We found this info for -"+ getJSON.name;
+
     console.log("The Artist on this track include: ");
     //  This gets the artist name
+
+    var artArray = [];
     for (var i = 0; i < getJSON.artists.length; i++) {
       console.log(getJSON.artists[i].name);
+      artArray.push(getJSON.artists[i].name)
     }
+
+    var artName = "The Artist on this track include: ";
     // This gets the album name
     console.log("Album Name: ", getJSON.album.name);
-
+    var albName = "Album Name: " + getJSON.album.name;
     // This gets the link to listen to the song on spotifiy. 
     console.log("Listen to the Song now:", getJSON.external_urls.spotify);
+    var link = "Listen to the Song now:" + getJSON.external_urls.spotify;
+
+    var spotArray = [songName ,artName , artArray[0], artArray[1], albName, link];
+    for (var s = 0; s < spotArray.length; s++) {
+     
+      
+    fs.appendFile('log.tx', spotArray[s], function(err) {
+      
+        // If an error was experienced we say it.
+        if (err) {
+          console.log(err);
+        }
+  
+      });
+    }
   });
 
 }

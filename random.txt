@@ -1,1 +1,1 @@
-my-tweets,"JSON_NAVARRO"
+movie-this,"mighty ducks"

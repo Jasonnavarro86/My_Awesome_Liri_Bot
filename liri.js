@@ -9,6 +9,8 @@ var doWhatItSays = require('./do-what-it-says');
 
 var Twitter = require('twitter');
 
+var fs = require('fs');
+
 
 // Here I give the instructions if only liri is inputed with no other items. 
 if(process.argv.length == 2){
@@ -44,7 +46,17 @@ T.get('statuses/user_timeline', params, function (error, tweets, response) {
 
         for (var x in tweets) {
             
-            console.log('Tweeted: "', tweets[x].text, '" on ' + tweets[x].created_at);    
+            console.log('Tweeted: "', tweets[x].text, '" on ' + tweets[x].created_at); 
+
+            var log = "Tweeted:"+ tweets[x].text + "on " + tweets[x].created_at;
+            fs.appendFile('log.tx', log, function(err) {
+                
+                  // If an error was experienced we say it.
+                  if (err) {
+                    console.log(err);
+                  }
+            
+                });
         }    
     }
     if (error) {
