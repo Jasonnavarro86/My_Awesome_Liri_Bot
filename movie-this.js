@@ -26,20 +26,29 @@ function movieTime(){
             console.log("If we search 'Mr. Nobody' Results will look like:");
         }
       
+        // This is the code to search the omdb API and retrive the JSON.
         request(movieParams, function (error, response, body) {
             if(error){
             console.log('error:', error);
             } 
-            
+            // Here I parse the JSON sent from omdb.
             var JSONBody = JSON.parse(body);
             
+            // This gets the movie title.
             console.log('Title:', JSONBody.Title); 
+            // This gets the movie year
             console.log('Year the movie came out:', JSONBody.Year); 
+            // This gets the IMDB rating.
             console.log('IMDB Rating:', JSONBody.imdbRating); 
+            // This gets the Rotten Tomatoes Rating
             console.log('Rotten Tomatoes Rating:', JSONBody.Ratings[1].Value); 
-            console.log('Country where the movie was produced:', JSONBody.Country); 
+            // This gets the Country where the movie was produced
+            console.log('Country where the movie was produced:', JSONBody.Country);
+            // This gets the Language
             console.log('Language:', JSONBody.Language); 
+            // This gets the Plot
             console.log('Plot:', JSONBody.Plot); 
+            // This gets the Actors
             console.log('Actors:', JSONBody.Actors); 
           });
     }

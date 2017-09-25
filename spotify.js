@@ -32,7 +32,7 @@ if (process.argv[2] == "spotify-this-song"){
     };
   }
 
-// This is the code to search the spotify API and retrive a JSON.
+// This is the code to search the spotify API and retrive the JSON.
   spotify1.search(params2, function (err, data) {
     if (err) {
       return console.log('ERROR occurred: ' + err);
