@@ -3,7 +3,7 @@ var request = require('request');
 
 // I entered all my code for the movie-time command in this function.
 function movieTime(){
-    if(process.argv[2] == "movie-time"){
+    if(process.argv[2] == "movie-this"){
         // Here I put all words from process.argv.length 3 + into an array and then join them for the omdb api.
         var movieString = [];
 
@@ -20,7 +20,7 @@ function movieTime(){
         var movieParams = 'http://www.omdbapi.com/?t='+ movieName +'&apikey=40e9cece';
      
         // This is my defualt if no movie name is entered instructions are generated and an example.
-        if (process.argv[2] == "movie-time" && process.argv.length == 3) {
+        if (process.argv[2] == "movie-this" && process.argv.length == 3) {
             movieParams = 'http://www.omdbapi.com/?t=mr.nobody&apikey=40e9cece';
             console.log("HELP - To search for movies use LIRI like so:  node liri.js movie-this '<movie name here>'");
             console.log("If we search 'Mr. Nobody' Results will look like:");

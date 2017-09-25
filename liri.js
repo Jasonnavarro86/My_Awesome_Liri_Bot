@@ -5,7 +5,10 @@ var keys = require('./keys2');
 
 var movieThis = require('./movie-this');
 
+var doWhatItSays = require('./do-what-it-says');
+
 var Twitter = require('twitter');
+
 
 // Here I give the instructions if only liri is inputed with no other items. 
 if(process.argv.length == 2){
@@ -22,6 +25,7 @@ if(process.argv[2] == "my-tweets" && process.argv.length > 3){
     twitterName = process.argv[3];
   
 }
+
 
 var params = {
     screen_name: twitterName,
