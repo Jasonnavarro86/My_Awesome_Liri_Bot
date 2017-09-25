@@ -3,11 +3,7 @@
 Just FYI - The KEY files that you see on github are empty (No keys were ever pushed). 
 
 
-The GIF below is showing when you run 
-
-- $ node liri
-
-in the command line, instructions on how to use LIRI BOT will be generated. 
+When you run / node liri / in the command line, instructions on how to use LIRI BOT will be generated. 
 
 ![instructions-gif](https://user-images.githubusercontent.com/28733244/30830115-d48fa3b6-a210-11e7-9b5b-9d297b1e8b68.gif)​
 
