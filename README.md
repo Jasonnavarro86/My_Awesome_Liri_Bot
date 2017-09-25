@@ -7,7 +7,7 @@ The GIF below demonstrates what happens if you run:
 
 - $ node liri.js my-tweets 
 
-OR 
+or 
 
 - $ node liri.js my-tweets Your-Screen-Name
 
@@ -17,25 +17,25 @@ The gif below demonstrates what happens if you run:
 
 - $ node liri.js spotify-this-song
 
-OR 
+or 
 
--$ node liri.js spotify-this-song Song-Title
+- $ node liri.js spotify-this-song Song-Title
 
 ![spotify-gif](https://user-images.githubusercontent.com/28733244/30825737-07f31d5a-a202-11e7-956d-1a6767297278.gif)
 
 The gif below demonstrates what happens if you run:
 
--$ node liri.js movie-this
+- $ node liri.js movie-this
 
-OR 
+or 
 
--$ node liri.js movie-this Movie-Title
+- $ node liri.js movie-this Movie-Title
 
 ![movie-this](https://user-images.githubusercontent.com/28733244/30825834-75cb0e6e-a202-11e7-8511-d0c47461162f.gif)
 
 The gif below demonstrates what happens if you run:
 
-$ node liri.js do-what-it-says
+- $ node liri.js do-what-it-says
 
 ![do-what-it-says](https://user-images.githubusercontent.com/28733244/30825899-ae544340-a202-11e7-8644-0f3a9caffd8c.gif)
 
