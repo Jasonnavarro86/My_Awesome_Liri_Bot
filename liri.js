@@ -1,5 +1,5 @@
 // These variables require the modules and files needed for the liri bot.
-var spotify = require('./spotify')
+var spotify = require('./spotify');
 
 var keys = require('./keys2');
 

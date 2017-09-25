@@ -57,3 +57,7 @@ typings/
 # dotenv environment variables file
 .env
 
+#my files 
+spotKeys.js
+
+keys2.js
