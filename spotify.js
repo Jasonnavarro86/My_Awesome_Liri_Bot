@@ -8,14 +8,14 @@ if (process.argv[2] == "spotify-this-song"){
   // I am inputing my spotify access keyes. 
   var spotify1 = new spotifyApi(spotifyKeys);
 
-  // Here I put all words from process.argv 3 + into an array and then join them for the spotify api.
+  // Here I put all words from process.argv.length 3 + into an array and then join them for the spotify api.
   var stringSong = [];
 
-  // this is the for loop that pushes all the process.argv 3+ into the array.
+  // this is the for loop that pushes all the process.argv 3+ into the stringSong array.
   for (var y = 3; y < process.argv.length; y++) {
     stringSong.push(process.argv[y]);
   }
-  // this joins the array StringSong. 
+  // this joins the array StringSong to pass into the params2 for the spoitfy api. 
   var dynamicString = stringSong.join(' ')
 
 // This is my defualt if no song name is entered when using spotify-this-song in the command line.
