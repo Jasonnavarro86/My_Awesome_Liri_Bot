@@ -4,8 +4,11 @@ Just FYI - The KEY files that you see on github are empty (No keys were ever pus
 
 
 The gif below demonstrates what happens if you run 
+
 $ node liri.js my-tweets 
+
 OR 
+
 $ node liri.js my-tweets Your-Screen-Name
 
 ![my-tweets](https://user-images.githubusercontent.com/28733244/30828498-d99f7ea8-a20b-11e7-9b7c-b72b01683cba.gif)
