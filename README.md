@@ -6,21 +6,21 @@ Just FYI - The KEY files that you see on github are empty (No keys were ever pus
 The gif below demonstrates what happens if you run 
 $ node liri.js my-tweets 
 OR 
-$ node liri.js my-tweets '<Your Screen Name>'
+$ node liri.js my-tweets Your-Screen-Name
 
-![sep-25-2017 14-13-40](https://user-images.githubusercontent.com/28733244/30823934-e6609812-a1fb-11e7-9f0a-4680a17b1ccd.gif)
+![my-tweets](https://user-images.githubusercontent.com/28733244/30828498-d99f7ea8-a20b-11e7-9b7c-b72b01683cba.gif)
 
 The gif below demonstrates what happens if you run 
 $ node liri.js spotify-this-song
 OR 
-$ node liri.js spotify-this-song '<Song Title>'
+$ node liri.js spotify-this-song Song-Title
 
 ![spotify-gif](https://user-images.githubusercontent.com/28733244/30825737-07f31d5a-a202-11e7-956d-1a6767297278.gif)
 
 The gif below demonstrates what happens if you run 
 $ node liri.js movie-this
 OR 
-$ node liri.js movie-this '<Movie Title>'
+$ node liri.js movie-this Movie-Title
 
 ![movie-this](https://user-images.githubusercontent.com/28733244/30825834-75cb0e6e-a202-11e7-8511-d0c47461162f.gif)
 
